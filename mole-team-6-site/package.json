@@ -1,7 +1,7 @@
 {
   "name": "mole-team-6-site",
   "version": "0.1.0",
-  "homepage": "https://acm1264.github.io/mole-team-6-site"
+  "homepage": "https://acm1264.github.io/mole-team-6-site",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
