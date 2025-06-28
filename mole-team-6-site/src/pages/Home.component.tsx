@@ -1,23 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Typography } from '@mui/material'
+import { Container, Title, Subtitle, HeroImage } from "./Home.styles";
 
-const Container = styled.div`
-  padding: 2rem;
-`
-
-const Home = () => 
-{
-  return (
-    <Container>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Home
-      </Typography>
-      <Typography>
-        home page!
-      </Typography>
-    </Container>
-  )
+export function Home() {
+    return (
+        <Container>
+            <HeroImage src="/assets/logo.png" alt="Mole Team 6 Logo" />
+            <Title>Welcome to Mole Team 6</Title>
+            <Subtitle>A chaotic couch co-op bullet hell experience</Subtitle>
+        </Container>
+    );
 }
 
-export default Home
+export default Home;

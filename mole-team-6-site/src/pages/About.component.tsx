@@ -1,23 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Typography } from '@mui/material'
+import { Container, Header, Paragraph } from "./About.styles";
 
-const Container = styled.div`
-  padding: 2rem;
-`
-
-const About = () => 
-{
-  return (
-    <Container>
-      <Typography variant="h4" component="h1" gutterBottom>
-        About Us
-      </Typography>
-      <Typography>
-        Making cool stuff!
-      </Typography>
-    </Container>
-  )
+export function About() {
+    return (
+        <Container>
+            <Header>About Us</Header>
+            <Paragraph>
+                Mole Team 6 is a small indie studio building fast-paced,
+                retro-style multiplayer games. We’re passionate about couch
+                co-op chaos and creating memorable moments with friends.
+            </Paragraph>
+            <Paragraph>
+                Our first title is a competitive bullet hell arena brawler where
+                reflexes and power-ups collide in colorful, over-the-top
+                showdowns. Stay tuned for more updates and behind-the-scenes!
+            </Paragraph>
+        </Container>
+    );
 }
 
-export default About
+export default About;

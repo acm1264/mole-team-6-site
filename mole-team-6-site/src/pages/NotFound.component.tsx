@@ -1,23 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Typography } from '@mui/material'
+import { Container, Title, Description } from "./NotFound.styles";
 
-const Container = styled.div`
-  padding: 2rem;
-`
-
-const NotFound = () => 
-{
-  return (
-    <Container>
-      <Typography variant="h4" component="h1" gutterBottom>
-        NotFound Us
-      </Typography>
-      <Typography>
-        We could not find the page ya wanted... :(
-      </Typography>
-    </Container>
-  )
+export function NotFound() {
+    return (
+        <Container>
+            <Title>404</Title>
+            <Description>
+                Oops! The page you're looking for doesn't exist.
+            </Description>
+        </Container>
+    );
 }
 
-export default NotFound
+export default NotFound;
