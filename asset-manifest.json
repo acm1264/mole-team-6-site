@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mole-team-6-site/static/css/main.e6c13ad2.css",
-    "main.js": "/mole-team-6-site/static/js/main.566959bd.js",
-    "static/js/453.62a06dcd.chunk.js": "/mole-team-6-site/static/js/453.62a06dcd.chunk.js",
-    "index.html": "/mole-team-6-site/index.html",
-    "main.e6c13ad2.css.map": "/mole-team-6-site/static/css/main.e6c13ad2.css.map",
-    "main.566959bd.js.map": "/mole-team-6-site/static/js/main.566959bd.js.map",
-    "453.62a06dcd.chunk.js.map": "/mole-team-6-site/static/js/453.62a06dcd.chunk.js.map"
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.b5e4fb13.js",
+    "static/js/453.62a06dcd.chunk.js": "/static/js/453.62a06dcd.chunk.js",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.b5e4fb13.js.map": "/static/js/main.b5e4fb13.js.map",
+    "453.62a06dcd.chunk.js.map": "/static/js/453.62a06dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.566959bd.js"
+    "static/js/main.b5e4fb13.js"
   ]
 }
