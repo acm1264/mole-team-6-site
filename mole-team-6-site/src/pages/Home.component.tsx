@@ -1,13 +1,14 @@
-import { Container, Title, Subtitle, HeroImage } from "./Home.styles";
+import { useEffect } from "react"
+import { useRouter } from "next/router"
 
-export function Home() {
-    return (
-        <Container>
-            <HeroImage src="/assets/logo.png" alt="Mole Team 6 Logo" />
-            <Title>Welcome to Mole Team 6</Title>
-            <Subtitle>A chaotic couch co-op bullet hell experience</Subtitle>
-        </Container>
-    );
+export default function Home()
+{
+  const router = useRouter()
+
+  useEffect(() =>
+  {
+    router.replace("/games/mole-team-6") // Adjust to your actual route
+  }, [router])
+
+  return null
 }
-
-export default Home;
