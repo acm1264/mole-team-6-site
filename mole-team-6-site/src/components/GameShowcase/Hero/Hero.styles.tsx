@@ -11,7 +11,7 @@ export const HeroContainer = styled.section`
 
 export const HeroImage = styled.div<{ $src: string }>`
   width: 100%;
-  background-image: url(${props => props.$src});
+  background-image: url(${(props) => props.$src});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,7 +50,6 @@ export const OverlayButton = styled.a`
     background-color: ${({ theme }) => theme.colors.accent2};
     color: ${({ theme }) => theme.colors.surface}; // <-- add this line
   }
-
 `;
 
 export const Icon = styled.span`
@@ -78,7 +77,6 @@ export const InfoList = styled.ul`
   font-size: 0.9rem;
   padding: 0 1rem;
   max-width: 800px;
-  width: 100%;
 `;
 
 export const InfoItem = styled.li`

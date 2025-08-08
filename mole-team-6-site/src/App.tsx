@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import About from "./pages/About.component";
 import NotFound from "./pages/NotFound.component";
 import Home from "./pages/Home.component"; // Optional if you redirect away from "/"
@@ -18,13 +23,14 @@ const App = () => {
         <Layout>
           <Routes>
             {/* Redirect root to /games/ship-shape-slam if only one game */}
-            <Route path="/" element={<Navigate to="/games/ship-shape-slam" replace />} />
+            {/* <Route path="/" element={<Navigate to="/games/ship-shape-slam" replace />} /> */}
+            <Route path="/" element={<OpShape />} />
 
             {/* Static pages */}
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
 
             {/* Game-specific routes */}
-            <Route path="/games/ship-shape-slam" element={<OpShape />} />
+            {/* <Route path="/games/ship-shape-slam" element={<OpShape />} /> */}
 
             {/* 404 fallback */}
             <Route path="*" element={<NotFound />} />
