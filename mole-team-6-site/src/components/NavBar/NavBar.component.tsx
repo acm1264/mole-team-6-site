@@ -31,7 +31,8 @@ const NavBar = () => {
           Mole Team 6
         </Brand>
 
-        <Hamburger
+        {/* TODO: add this back in when want multiple pages to be used again */}
+        {/* <Hamburger
           open={open}
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
@@ -39,7 +40,7 @@ const NavBar = () => {
           <span />
           <span />
           <span />
-        </Hamburger>
+        </Hamburger> */}
 
         {/* <Menu open={open}>
                     <MenuItem to="/" onClick={() => setOpen(false)}>

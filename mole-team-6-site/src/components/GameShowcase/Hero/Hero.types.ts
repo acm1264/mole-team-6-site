@@ -12,12 +12,13 @@ export interface HeroProps {
   };
 }
 
-
 export interface GameMetadata {
   genre: string;
   platforms: string[];
   releaseDate: string;
+  players: string;
   isReleased: boolean;
+  isDemo: boolean;
   price?: string;
   steamUrl: string;
 }

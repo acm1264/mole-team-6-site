@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const DetailsSection = styled.section`
-  width: 100%;                /* full width */
-  max-width: 1200px;          /* constrain max width on large screens */
-  margin: 0 auto;             /* center horizontally */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: ${({ theme }) => theme.colors.surfaceAlt};
   color: ${({ theme }) => theme.colors.textPrimary};
-  padding: 4rem 1rem;         /* reduce side padding for small screens */
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;     /* include padding in width */
+  box-sizing: border-box;
 `;
 
 export const Logo = styled.img`
@@ -34,7 +34,7 @@ export const TrailerWrapper = styled.div`
 
 export const SectionBlock = styled.div`
   max-width: 800px;
-  width: 100%;               /* full width up to max */
+  width: 100%;
   text-align: left;
   margin-bottom: 2.5rem;
 `;

@@ -6,7 +6,7 @@ export const GallerySection = styled.section`
   margin: 0 auto;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.textPrimary};
-  padding: 4rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

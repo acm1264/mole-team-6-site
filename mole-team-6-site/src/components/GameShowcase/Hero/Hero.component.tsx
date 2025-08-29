@@ -7,7 +7,7 @@ import {
   Tagline,
   InfoList,
   InfoItem,
-  Icon
+  Icon,
 } from "./Hero.styles";
 import { HeroProps } from "./Hero.types";
 
@@ -19,9 +19,18 @@ const Hero: React.FC<HeroProps> = ({
   tagline,
   metadata,
   buttonPosition = { top: "1rem", right: "1rem" },
-  pressKitUrl
+  pressKitUrl,
 }) => {
-  const { genre, platforms, releaseDate, steamUrl, isReleased, price } = metadata;
+  const {
+    genre,
+    platforms,
+    releaseDate,
+    players,
+    steamUrl,
+    isReleased,
+    isDemo,
+    price,
+  } = metadata;
 
   // Cast to valid React component types
   const FaSteam = FaIcons.FaSteam as React.ElementType;
@@ -29,41 +38,48 @@ const Hero: React.FC<HeroProps> = ({
 
   return (
     <HeroContainer>
-      <HeroImage $src={heroImage}>
-        <OverlayButtonContainer style={buttonPosition}>
-          {steamUrl && (
-            <OverlayButton
-              href={steamUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon>
-                <FaSteam />
-              </Icon>
-              {isReleased ? `Buy Now ${price ?? ""}` : "Wishlist"}
-            </OverlayButton>
-          )}
+      <HeroImage $src={heroImage}></HeroImage>
+      {isDemo && <h2>Demo Available now!</h2>}
+      <OverlayButtonContainer style={{ marginTop: isDemo ? 0 : "1rem" }}>
+        {steamUrl && (
+          <OverlayButton
+            href={steamUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon>
+              <FaSteam />
+            </Icon>
+            {isReleased
+              ? `Buy Now ${price ?? ""}`
+              : isDemo
+              ? "Wishlist & Demo"
+              : "Wishlist"}
+          </OverlayButton>
+        )}
 
-          {pressKitUrl && (
-            <OverlayButton
-              href={pressKitUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon>
-                <FaGoogleDrive />
-              </Icon>
-              Press Kit
-            </OverlayButton>
-          )}
-        </OverlayButtonContainer>
-      </HeroImage>
+        {pressKitUrl && (
+          <OverlayButton
+            href={pressKitUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon>
+              <FaGoogleDrive />
+            </Icon>
+            Press Kit
+          </OverlayButton>
+        )}
+      </OverlayButtonContainer>
 
       <Tagline>{tagline}</Tagline>
 
       <InfoList>
         <InfoItem>
           <strong>Genre:</strong> {genre}
+        </InfoItem>
+        <InfoItem>
+          <strong># Players:</strong> {players}
         </InfoItem>
         <InfoItem>
           <strong>Platforms:</strong> {platforms.join(", ")}

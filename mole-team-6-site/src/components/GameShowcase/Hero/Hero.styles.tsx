@@ -6,7 +6,6 @@ export const HeroContainer = styled.section`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.colors.background};
-  padding-bottom: 2rem;
 `;
 
 export const HeroImage = styled.div<{ $src: string }>`
@@ -20,13 +19,12 @@ export const HeroImage = styled.div<{ $src: string }>`
   aspect-ratio: 16 / 9;
   @media (min-width: 768px) {
     aspect-ratio: auto;
-    height: 600px;
+    height: 450px;
     max-height: 80vh;
   }
 `;
 
 export const OverlayButtonContainer = styled.div`
-  position: absolute;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -48,7 +46,7 @@ export const OverlayButton = styled.a`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.accent2};
-    color: ${({ theme }) => theme.colors.surface}; // <-- add this line
+    color: ${({ theme }) => theme.colors.surface};
   }
 `;
 
