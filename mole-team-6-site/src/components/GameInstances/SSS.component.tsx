@@ -11,7 +11,7 @@ const OpShape = () => {
         metadata: {
           genre: "Multiplayer Party / Bullethell / Action",
           platforms: ["PC", "Steam Deck"],
-          releaseDate: "TBD",
+          releaseDate: "TBD 2026",
           players: "1-4",
           isReleased: false,
           isDemo: true,
@@ -28,7 +28,7 @@ const OpShape = () => {
       }}
       details={{
         logo: "/images/sss/logo.png",
-        trailerEmbedUrl: "https://www.youtube.com/embed/ju-8X7OB_8Y",
+        trailerEmbedUrl: "https://www.youtube.com/embed/AewV9ssK__I",
         sections: [
           {
             title: "About the Game",
