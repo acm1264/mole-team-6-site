@@ -49,7 +49,7 @@ const OpShape = () => {
                 "<b>One Joystick, One Button, Infinite Betrayal</b> - Simple to pick up, impossible to put down. Even your non-gamer roommate can ruin your night.",
                 "<b>100+ Arenas of Mayhem</b> - All packed with game-changing power-ups, physics chaos, silly hazards, and wild win conditions that keep every match unpredictable.",
                 "<b>Ridiculous Rules & Silly Styles</b> - Tweak the rulesets for ultimate chaos and dress your character in goofy costumes to match.",
-                "<b>Solo But Still Stupid</b> - Play alone, make terrible decisions, and still have a blast. The game won't judge you... but your couch might.",
+                "<b>Solo But Still Stupid</b> - Play alone, make terrible decisions, and still have a blast. Each level keeps track of your high score, so see how well you can do!",
               ],
             },
           },
