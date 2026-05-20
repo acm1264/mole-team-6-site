@@ -94,8 +94,20 @@ const OpShape = () => {
             alt: "Gameplay Screenshot 9",
           },
           {
-            src: "/images/sss/SS_10.png",
+            src: "/images/sss/SS_10.jpg",
             alt: "Gameplay Screenshot 10",
+          },
+          {
+            src: "/images/sss/SS_11.jpg",
+            alt: "Gameplay Screenshot 11",
+          },
+          {
+            src: "/images/sss/SS_12.jpg",
+            alt: "Gameplay Screenshot 12",
+          },
+          {
+            src: "/images/sss/SS_13.jpg",
+            alt: "Gameplay Screenshot 13",
           },
         ],
       }}
